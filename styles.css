@@ -5,7 +5,7 @@ body {
   height: 100vh;
   color: #2e3638;
   padding-top: 3%;
-  font-size: 18px;
+  font-size: 15px;
   background-color: rgb(202, 202, 202);
   font-family: "Poppins", sans-serif;
   gap: 2%;
@@ -25,6 +25,7 @@ input::placeholder {
 
 a {
   text-decoration: none;
+  color: #2e3638;
   font-weight: 700;
   cursor: pointer;
 }
@@ -32,10 +33,6 @@ a {
 a:visited {
   text-decoration: none;
   color: #2e3638;
-}
-
-h1,
-h2 {
 }
 
 button {
