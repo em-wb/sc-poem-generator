@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="app.js" defer></script>
+
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -21,21 +26,28 @@
           <div class="question">
             <h3>Who is the poem about?</h3>
 
-            <input type="text" placeholder="Enter the protagonist" />
+            <input
+              id="protagonist"
+              type="text"
+              placeholder="Enter the protagonist"
+            />
             <small>e.g. Daniel, A cat called Patrice, Sophie the Florist</small>
           </div>
           <div class="question">
             <h3>What is the topic?</h3>
-            <input type="text" placeholder="Enter the topic" />
+            <input id="topic" type="text" placeholder="Enter the topic" />
             <small
               >e.g. The coolest person in the world, Being very cheeky, Being in
               love with coffee</small
             >
           </div>
+          <button type="submit">Generate Poem</button>
         </div>
       </div>
-      <div class="output-container hidden">
-        <p>✍️ Writing your personalised poem<span>...</span></p>
+      <div id="output-container" class="output-container hidden">
+        <p id="output-text">
+          ✍️ Writing your personalised poem<span id="loading"></span>
+        </p>
       </div>
     </div>
 
