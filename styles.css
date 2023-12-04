@@ -38,6 +38,18 @@ h1,
 h2 {
 }
 
+button {
+  background-color: #7cb342;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 8px rgba(124, 179, 66, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 small {
   padding: 1% 0 0 1%;
   font-size: 0.8rem;
@@ -53,7 +65,7 @@ small {
 
 .input-container,
 .output-container {
-  padding: 30px;
+  padding: 50px 80px;
   border-radius: 10px;
   background-color: #e6eecf;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
