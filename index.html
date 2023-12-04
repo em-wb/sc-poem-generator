@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>AI Poem Generator</h1>
-      <h2>Get a personalised poem in seconds</h2>
-      <div class="form-container">
-        <input type="text" placeholder="Who is the poem about?" />
-        <small>e.g. Daniel, A cat called Patrice, Sophie the Florist</small>
-        <input type="text" placeholder="What is the topic of the poem" />
-        <small
-          >e.g. The coolest person in the world, Being very cheeky, Being in
-          love with coffee</small
-        >
+      <div class="input-container">
+        <h1>AI Poem Generator</h1>
+        <h2>Create your personalised poem below.</h2>
+        <div class="form-container">
+          <div class="question">
+            <h3>Who is the poem about?</h3>
+
+            <input type="text" placeholder="Enter the protagonist" />
+            <small>e.g. Daniel, A cat called Patrice, Sophie the Florist</small>
+          </div>
+          <div class="question">
+            <h3>What is the topic?</h3>
+            <input type="text" placeholder="Enter the topic" />
+            <small
+              >e.g. The coolest person in the world, Being very cheeky, Being in
+              love with coffee</small
+            >
+          </div>
+        </div>
       </div>
-      <div class="output-container">
-        <p>🤖 Creating your personalised poem<span>...</span></p>
+      <div class="output-container hidden">
+        <p>✍️ Writing your personalised poem<span>...</span></p>
       </div>
     </div>
 

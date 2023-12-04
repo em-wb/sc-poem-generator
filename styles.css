@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #2e3638;
+  padding-top: 3%;
+  font-size: 18px;
+  background-color: rgb(202, 202, 202);
+  font-family: "Poppins", sans-serif;
+  gap: 2%;
+}
+
+input {
+  background-color: ;
+  border-radius: 10px;
+  border: 2px solid #7cb342;
+  font-size: 0.8rem;
+  padding: 2%;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #2e3638;
+}
+
+h1,
+h2 {
+}
+
+small {
+  padding: 1% 0 0 1%;
+  font-size: 0.8rem;
+  opacity: 70%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 50px;
+}
+
+.input-container,
+.output-container {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #e6eecf;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.output-container {
+  border-left: 10px solid #7cb342;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.output-container {
+  font-family: "Noto Serif", serif;
+}
+
+.hidden {
+  display: none;
+}
