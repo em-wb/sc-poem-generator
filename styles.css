@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   color: #2e3638;
-  padding-top: 3%;
+  padding-top: 2rem;
   font-size: 15px;
   background-color: rgb(202, 202, 202);
   font-family: "Poppins", sans-serif;
@@ -12,7 +12,6 @@ body {
 }
 
 input {
-  background-color: ;
   border-radius: 10px;
   border: 2px solid #7cb342;
   font-size: 0.8rem;
@@ -57,12 +56,11 @@ small {
   display: flex;
   flex-direction: column;
   width: auto;
-  gap: 50px;
 }
 
 .input-container,
 .output-container {
-  padding: 50px 80px;
+  padding: 2rem 3rem;
   border-radius: 10px;
   background-color: #e6eecf;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -70,6 +68,7 @@ small {
 
 .output-container {
   border-left: 10px solid #7cb342;
+  margin-top: 2rem;
 }
 
 .question {
@@ -84,4 +83,27 @@ small {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .input-container,
+  .output-container {
+    padding: 1rem 2rem;
+  }
 }
